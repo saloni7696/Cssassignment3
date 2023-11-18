@@ -1,0 +1,367 @@
+/* stylesheet  */
+/* 2 custom fonts  */
+@font-face {
+    font-family: s1 ;
+    src: url(../fonts/BodoniFLF-Roman.ttf);
+}
+@font-face {
+    font-family: s2 ;
+    src: url(../fonts/baskvl.ttf);
+}
+/* making overall pagee to have a smooth effect whenevrr it is scrolled  */
+html{
+    scroll-behavior: smooth ;
+}
+/* getting the whole webpage to be in te middle by using margin and also cover only half of the page  */
+body{
+    width:50%;
+    margin: auto; 
+}
+/* using flexbox to make the header look arranged  */
+header{
+    display: flex;
+    align-items: center;
+    background-color:#311d0e;
+    width: auto;
+    height: 6em;
+    flex-grow: 1;
+}
+/* using flexgrow to increase the gap b/w logo and list items  */
+header div {
+    width: auto;
+    height: 7.1em;
+    flex-grow: 1;
+}
+/* adjusting the image (logo) */
+header div img{
+    width: auto;
+    height: 70%;
+    padding-top: 4%;
+    padding-left: 4%;
+}
+/* removing unecessaruy decorations from menu items  */
+header nav menu{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+/* decorating the text  */
+header nav menu li{
+    padding-right:0.9em;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    font-family: 's2', serif;
+}
+/* removing unecessaruy decorations from anchor tag text  */
+header nav menu li a{
+    color: #faeeee;
+    text-decoration: none;
+}
+/* adding hover effect on the list items in header  */
+header nav menu li a:hover{
+    color: #6F4E37;
+}
+/* adding bg image in the masthead class and ading text over it  */
+.masthead{
+    height: 40vh;
+    background-image: url("../img/bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+/* added a bg color in a section to have a color at the bootom before using clip path so that the color theme is not disturbed  */
+.bb{
+    background-color: #311d0e;
+}
+/* adding custom fonts here along with other text decorations  */
+.div1{
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: font-size 0.3s;
+}
+.div1 h1{
+    margin:0;
+    padding-bottom: 2%;
+    font-family: 's1', sans-serif;
+    text-transform: uppercase;   
+}
+ /* adding text decorationss to each text items in the masthead  */
+.div1:nth-child(1){
+    color: #706868;
+    font-size: 1.1em;
+    letter-spacing: .45em; 
+      
+}
+/* adding a hover effect to increase the font siz whwnever i hover over it  */
+.div1:nth-child(1):hover {
+    font-size: 1.5em; 
+  }
+  /* desiging the button  */
+.btn-1 a{
+    margin: 0px 10px;
+    border: solid .25em #292727;
+    background-color: #0e0e0e;
+    color: #f9f9f9;
+    padding: 3%;
+    text-decoration: none;
+    filter: drop-shadow(0.37em 0.25em 0.25em #2e2e2e);
+    font-family: 's1',sans-serif;
+}
+/* again adding a hover effect  */
+.a1:hover{
+    border-color: #0e0e0e;
+    filter: drop-shadow(0em 0em 0em #0e0e0e);
+}
+.div2{
+    text-align: center;
+    background-color: #6F4E37;
+    clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
+        
+}
+/* adding text styles in h2 where the products are shown  */
+.div2 h2{
+    font-size: 1.2em;
+    margin:0;
+    letter-spacing: .02em;
+    font-family: 's2',sans-serif;
+}
+/* adding a different style to the word "product" using span  */
+.div2 h2 span{
+    font-size: 1.8em;
+    letter-spacing: .13em;
+    font-family: 's2',sans-serif;
+    text-transform: uppercase;
+}
+/* againg adding a backgrounf image to the products section to have a overal theme going onn  */
+.p-bg{
+    background-image: url(../img/bgg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* product card designing they have produc  images and text related to the details of that same product and a button to learrcn further abt the product and how to order it on the next page  */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    padding: 2%;
+    width: 38vh;
+    text-align: center;
+  transition: transform .1s; 
+ 
+}
+.product-image{
+    height:auto;
+    width:35vh;
+}
+.product-card:hover .product-image {
+  transform: scale(1.1); 
+}
+
+.p1{
+    display: flex;
+}
+.p1 div{
+    flex-grow: 1;
+}
+  .product-image {
+    max-width: 100%;
+    border-radius: 0.5em;
+  }
+  .product-details {
+    margin-top: 0.625em;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .see-more-btn {
+    display: inline-block;
+    background-color: #422a12;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 0.25em;
+    transition: background-color 0.3s;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .see-more-btn:hover {
+    background-color: #83511f;
+  }
+ /* this part contains some images of social media famous recipes that would indulge peple to buy these candies and they get larger whene hovered upon and also the text below them acts as a fake link to take them to more fun recipes  */
+  .tips-main{
+    background-image: url("../img/bgg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .tips-main h3{
+    margin:0;
+    padding: 2% 0 0 0;
+    text-align: center;
+    color:#fff;
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+  }
+  .tips1{
+    display:flex;
+  }
+  .tips1  p{
+    padding:0%;
+    margin:0;
+  }
+  /* used a clit path here to shape the images in a circle */
+  .tips1  img{
+    height:auto;
+    width: 14em;
+    transition: transform 0.3s;
+    padding-bottom: 0%;
+    clip-path: circle(35%);
+  }
+  .tips1 img:hover {
+    transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+/* used grid to add columns of desizred width */
+  .tips2{
+    display:grid;
+    grid-template-columns: 28.3% 30.35% 42.35%;
+    padding-left:8%;
+  }
+  .tips2 p:nth-child(1){
+    padding-right: 3%;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  .tips2 p:nth-child(2){
+    
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left:2%;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  .tips2 p:nth-child(3){
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+  .n-facts {
+    position: relative;
+    display: inline-block;
+}
+/* added a background image to add gradiet a bit differetly so that i dd.t had to add another div which would have looked clumsier so instead used before attribute */
+
+.n-facts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(180, 111, 58, 0) 0%, rgba(190, 120, 50, 0.7) 100%);
+    z-index: 1;
+}
+
+.n-facts img {
+    
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+/* used z index to position the text and picture to look before gradient  */
+.n-facts div{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    text-align: left;
+    padding:2%;
+    color: #f7efef;
+    z-index: 2;
+    
+}
+/* designed the text  */
+.n-facts div h3{
+    font-size: 2em;
+    font-weight: 600;
+    margin:0;
+    padding:0;
+    font-family: 's2', serif;
+    text-shadow: .1em .1em 0em rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.n-facts div p{
+    font-size: 1.2em;
+    text-shadow: .1em .1em 0em rgba(0, 0, 0, 0.3);
+    margin:0;
+    padding:0%;
+    font-family: 's2', serif;
+}
+/* designed the footer again with grid  */
+footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    background-color: #4d2702;
+    color: #f4f4f4;
+}
+footer div{
+    padding-bottom:2%;
+    padding-left:5%;
+}
+footer div img{
+    width: auto;
+    height: 12vh;
+    padding:2%;
+}
+body > footer > section > h4{
+  text-align: center;
+  padding-top:4%;
+  margin:0;
+  font-size:1.3em;
+  font-family: 'Merriweather', serif;
+}
+body > footer > section > div{
+  display : grid;
+  grid-template-columns: repeat(4,25%);
+  padding-left: 0%;
+  font-size: 1em;
+}
+body > footer > section > p{
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+}
+
+.form1 input{
+    width: 10em;
+    font-size: 0.7em;
+    margin-bottom: 0.5em;
+    font-family: 'Playfair Display', serif;
+  }
+.form1 button{
+    width: 5em;
+    font-size: 0.8em; 
+    font-family: 'Playfair Display', serif;
+    background-color: #6F4E37;
+    border:solid #311d0e;
+    border-radius:0.5em;
+     
+}
+.form1 button:hover{
+    background-color: #b99173;
+}
+
